@@ -95,12 +95,12 @@ def profile_attack(proxies):
 def main():
     print_success("Modules loaded!\n")
 
-    ret = ask_question("Do you want to use a proxy? [E/H]")
+    ret = ask_question("Do you want to use a proxy? [Y/N]")
 
     proxies = []
 
     if (ret == "E" or ret == "e"):
-        ret = ask_question("Do you want to collect your proxies from the internet? [E/H]")
+        ret = ask_question("Do you want to collect your proxies from the internet? [Y/N]")
 
         if (ret == "E" or ret == "e"):
             print_status("Collecting proxy from the Internet! this may take a while.\n")
@@ -113,7 +113,7 @@ def main():
             print_error("Couldn't understand the answer, exiting!")
             exit()
 
-        print_success(str(len(proxies)) + " Adet proxy bulundu!\n")
+        print_success(str(len(proxies)) + " Number of proxies found!\n")
     elif (ret == "H" or ret == "h"):
         pass
     else:
