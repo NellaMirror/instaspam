@@ -99,13 +99,13 @@ def main():
 
     proxies = []
 
-    if (ret == "E" or ret == "e"):
+    if (ret == "Y" or ret == "y"):
         ret = ask_question("Do you want to collect your proxies from the internet? [Y/N]")
 
-        if (ret == "E" or ret == "e"):
+        if (ret == "Y" or ret == "y"):
             print_status("Collecting proxy from the Internet! this may take a while.\n")
             proxies = find_proxies()
-        elif (ret == "H" or ret == "h"):
+        elif (ret == "N" or ret == "n"):
             print_status("Please allow a maximum of 50 proxies in one file!")
             file_path = ask_question("Enter the path to your proxy list")
             proxies = parse_proxy_file(file_path)
@@ -114,7 +114,7 @@ def main():
             exit()
 
         print_success(str(len(proxies)) + " Number of proxies found!\n")
-    elif (ret == "H" or ret == "h"):
+    elif (ret == "N" or ret == "n"):
         pass
     else:
         print_error("Couldn't understand the answer, exiting!")
