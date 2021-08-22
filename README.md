@@ -24,4 +24,5 @@ U NEED PIP3 AND Python 3.7!!!!
 
 
 ------UPDATES----
+
 Error: local variable referenced before assignment -> fixed
