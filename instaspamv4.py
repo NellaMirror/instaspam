@@ -49,6 +49,7 @@ def video_attack(proxies):
     video_url = ask_question("Enter the link of the video you want to report")
     print(Style.RESET_ALL)
     if (len(proxies) == 0):
+        global k
         for k in range(5):
             p = Process(target=video_attack_process, args=(video_url, [],))
             p.start()
@@ -73,6 +74,7 @@ def profile_attack(proxies):
     username = ask_question("Enter the username of the person you want to report")
     print(Style.RESET_ALL)
     if (len(proxies) == 0):
+        global k
         for k in range(5):
             p = Process(target=profile_attack_process, args=(username, [],))
             p.start()
