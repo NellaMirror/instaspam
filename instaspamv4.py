@@ -18,7 +18,6 @@ from libs.utils import parse_proxy_file
 from libs.proxy_harvester import find_proxies
 from libs.attack import report_profile_attack
 from libs.attack import report_video_attack
-from keras import backend as K
 
 from multiprocessing import Process
 from colorama import Fore, Back, Style
