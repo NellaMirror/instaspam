@@ -19,7 +19,6 @@ from libs.proxy_harvester import find_proxies
 from libs.attack import report_profile_attack
 from libs.attack import report_video_attack
 from keras import backend as K
-from keras import backend as k
 
 from multiprocessing import Process
 from colorama import Fore, Back, Style
