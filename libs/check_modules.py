@@ -8,14 +8,14 @@ def check_modules():
         import requests
     except:
         print("[-] 'requests' The package is not installed!")
-        print("[*] To install 'pip install requests[socks]' yazın!")
+        print("[*] To install 'pip install requests[socks]' STOP!")
         sys.exit(0)
 
     try:
         import colorama
     except Exception as e:
         print("[-] 'colorama' The package is not installed!")
-        print("[*] To install 'pip install colorama' yazın!")
+        print("[*] To install 'pip install colorama' STOP!")
         print(e)
         sys.exit(0)
 
@@ -23,21 +23,21 @@ def check_modules():
         import asyncio
     except:
         print("[-] 'asyncio' The package is not installed!")
-        print("[*] To install 'pip install asyncio' yazın!")
+        print("[*] To install 'pip install asyncio' STOP!")
         sys.exit(0)
 
     try:
         import proxybroker
     except:
         print("[-] 'proxybroker' The package is not installed!")
-        print("[*] To install 'pip install proxybroker' yazın!")
+        print("[*] To install 'pip install proxybroker' STOP!")
         sys.exit(0)
 
     try:
         import warnings
     except:
         print("[-] 'warnings' The package is not installed!")
-        print("[*] To install 'pip install warnings' yazın!")
+        print("[*] To install 'pip install warnings' STOP!")
         sys.exit(0)
 
     import warnings
