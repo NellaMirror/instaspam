@@ -91,7 +91,7 @@ def profile_attack(proxies):
         p = Process(target=profile_attack_process, args=(username, proxy_list,))
         p.start()
         print_status(str(i) + ". Transaction Opened!")
-        if (k == 5): print()
+        if (i == 5): print()
         i = i + 1
 
 def main():
