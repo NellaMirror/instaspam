@@ -35,7 +35,7 @@ report_headers = {
     "Host": "help.instagram.com",
     "Origin": "help.instagram.com",
     "Pragma": "no-cache",
-    "Referer": "https://help.instagram.com/contact/497253480400030",
+    "Referer": "https://help.instagram.com/contact/543840232909258",
     "TE": "Trailers",
 }
 
@@ -58,7 +58,7 @@ def report_profile_attack(username, proxy):
     report_headers["User-Agent"] = user_agent
 
     try:
-        res = ses.get("https://www.facebook.com/", timeout=10)
+        res = ses.get("https://www.facebook.com/",timeout=10)
     except:
         print_error("Connection error occurred! (FacebookRequestsError)")
         return
@@ -82,8 +82,9 @@ def report_profile_attack(username, proxy):
     }
 
     try:
-        res = ses.get("https://help.instagram.com/contact/497253480400030", cookies=page_cookies, headers=page_headers, timeout=10)
+        res = ses.get("https://help.instagram.com/contact/543840232909258", cookies=page_cookies, headers=page_headers, timeout=10,verify=False)
     except:
+        
         print_error("Connection error occurred! (InstagramRequestsError)")
         return
 
@@ -141,7 +142,7 @@ def report_profile_attack(username, proxy):
         "instagram_username": username,
         "Field241164302734019_iso2_country_code": "TR",
         "Field241164302734019": "Türkiye",
-        "support_form_id": "497253480400030",
+        "support_form_id": "543840232909258",
         "support_form_hidden_fields": "{}",
         "support_form_fact_false_fields": "[]",
         "__user": "0",
@@ -193,7 +194,7 @@ def report_video_attack(video_url, proxy):
     report_headers["User-Agent"] = user_agent
 
     try:
-        res = ses.get("https://www.facebook.com/", timeout=10)
+        res = ses.get("https://www.facebook.com/", timeout=10,verify=False)
     except Exception as e:
         print_error("Connection error occurred! (FacebookRequestsError)", e)
         return
@@ -217,7 +218,7 @@ def report_video_attack(video_url, proxy):
     }
 
     try:
-        res = ses.get("https://help.instagram.com/contact/497253480400030", cookies=page_cookies, headers=page_headers, timeout=10)
+        res = ses.get("https://help.instagram.com/contact/543840232909258", cookies=page_cookies, headers=page_headers, timeout=10,verify=False)
     except:
         print_error("Connection error occurred! (InstagramRequestsError)")
         return
@@ -277,7 +278,7 @@ def report_video_attack(video_url, proxy):
         "Field419623844841592": video_url,
         "Field1476905342523314_iso2_country_code": "TR",
         "Field1476905342523314": "Türkiye",
-        "support_form_id": "440963189380968",
+        "support_form_id": "543840232909258",
         "support_form_hidden_fields": '{"423417021136459":false,"419623844841592":false,"754839691215928":false,"1476905342523314":false,"284770995012493":true,"237926093076239":false}',
         "support_form_fact_false_fields": "[]",
         "__user": "0",
