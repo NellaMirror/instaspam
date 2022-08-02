@@ -28,3 +28,6 @@ U NEED PIP3 AND Python 3.7!!!!
 ------UPDATES----
 
 Error: local variable referenced before assignment -> fixed
+
+Info:
+instaspamv4 (tarik0) has been translated from turkish to english and has been improved
